@@ -14,12 +14,7 @@ AS
 	SELECT @DurationSeconds = Duration_seconds FROM INSERTED;
 	SELECT @EndTime = DATEADD(SECOND, @DurationSeconds, @StartTime);
 
-	IF EXISTS (SELECT * FROM Twitch.TIME_INTERVAL WHERE @StartTime = Start_time AND @DurationSeconds = Duration_seconds AND @Endtime = End_time)
-	BEGIN
-		RAISERROR ('This clip already exists!', 16, 1);
-		ROLLBACK TRAN;
-	END
-
+	IF NOT EXISTS (SELECT 1 FROM Twitch.TIME_INTERVAL WHERE @StartTime = Start_time AND @DurationSeconds = Duration_seconds AND @Endtime = End_time)
 	BEGIN
 		INSERT INTO Twitch.TIME_INTERVAL(Start_time, Duration_seconds, End_Time)
 		VALUES(@StartTime, @DurationSeconds, @EndTime)
@@ -39,12 +34,7 @@ AS
 	SELECT @EndDateTime = DATEADD(SECOND, @DurationSeconds, @StartDateTime)
 	SELECT @live = Has_ended FROM INSERTED;
 
-	IF EXISTS (SELECT * FROM Twitch.DATETIME_INTERVAL WHERE @StartDateTime = Start_date_time AND @DurationSeconds = Duration_seconds AND @EndDateTime = End_date_time)
-	BEGIN
-		RAISERROR ('This stream already exists!', 16, 1);
-		ROLLBACK TRAN;
-	END
-
+	IF NOT EXISTS (SELECT 1 FROM Twitch.DATETIME_INTERVAL WHERE @StartDateTime = Start_date_time AND @DurationSeconds = Duration_seconds AND @EndDateTime = End_date_time)
 	BEGIN
 		IF @live = 1
 		BEGIN
