@@ -810,7 +810,7 @@ namespace Twitch
             cmd.Parameters.AddWithValue("@Clip_id", clipIdTxtBox.Text);
             Stream stream = (Stream)listBox1.Items[listBox1.SelectedIndex];
             cmd.Parameters.AddWithValue("@Stream_id", stream.Id.ToString());
-            cmd.Parameters.AddWithValue("@Creator_channel_id", clipCreatorChannelNameTxtBox.Text);
+            cmd.Parameters.AddWithValue("@Creator_channel_id", GetChannelId(clipCreatorChannelNameTxtBox.Text.ToString()));
             cmd.Parameters.AddWithValue("@Title", clipTitleTxtBox.Text);
             cmd.Parameters.AddWithValue("@Start_time", clipStartTimeTxtBox.Text);
             cmd.Parameters.AddWithValue("@Duration_seconds", clipDurationTxtBox.Text);
@@ -1669,7 +1669,9 @@ namespace Twitch
             HideAllButtons();
             HideButtonsStreamClip();
             clipEndTimeTxtBox.Visible = true;
+            clipEndTimeTxtBox.ReadOnly = true;
             clipEndTimeLabel.Visible = true;
+
         }
         private void bttnDeleteStreamClip_Click(object sender, EventArgs e)
         {
