@@ -9,3 +9,14 @@ C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\Projeto Twitch\Twitch\Twitch\bin\D
 C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\Projeto Twitch\Twitch\Twitch\bin\Debug\Twitch.pdb
 C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\Projeto Twitch\Twitch\Twitch\obj\Debug\Twitch.exe
 C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\Projeto Twitch\Twitch\Twitch\obj\Debug\Twitch.pdb
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\bin\Debug\Twitch.exe.config
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\bin\Debug\Twitch.exe
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\bin\Debug\Twitch.pdb
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\obj\Debug\Twitch.csproj.AssemblyReference.cache
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\obj\Debug\Twitch.csproj.SuggestedBindingRedirects.cache
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\obj\Debug\Twitch.Form1.resources
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\obj\Debug\Twitch.Properties.Resources.resources
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\obj\Debug\Twitch.csproj.GenerateResource.cache
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\obj\Debug\Twitch.csproj.CoreCompileInputs.cache
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\obj\Debug\Twitch.exe
+C:\Users\35192\Desktop\UA Ano 2 Semestre 2\BD\BD_Project\Twitch\Twitch\obj\Debug\Twitch.pdb

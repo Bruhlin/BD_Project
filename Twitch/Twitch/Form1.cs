@@ -42,7 +42,8 @@ namespace Twitch
 
         private SqlConnection getSGBDConnection()
         {
-            return new SqlConnection("data source= DESKTOP-FI4THUP\\SQLEXPRESS;integrated security=true;initial catalog=master");
+            return new SqlConnection("data source= mednat.ieeta.pt\\SQLSERVER,8101; initial catalog=p6g9; User id=p6g9; Password=qwrmK35");
+            //return new SqlConnection("data source= DESKTOP-FI4THUP\\SQLEXPRESS;integrated security=true;initial catalog=master");
         }
 
         private bool verifySGBDConnection()

@@ -1,0 +1,30 @@
+Algum do DML usado em Form1.cs
+
+SELECT * FROM <Table>
+<Table>: Twitch.STREAM, Twitch.CATEGORY, Twitch.STREAM
+
+SELECT * FROM <Table> WHERE id=@id
+
+SELECT Channel_name, Channel_id FROM Twitch.CHANNEL WHERE Channel_id=@Channel_id
+
+SELECT Category_name, Category_id FROM Twitch.CATEGORY WHERE Category_id=@Category_id
+
+SELECT * FROM Twitch.TIME_INTERVAL WHERE Start_time=@Start_time AND Duration_seconds=@Duration_seconds
+
+SELECT * FROM Twitch.DATETIME_INTERVAL WHERE Start_date_time=@Start_date_time AND Duration_seconds=@Duration_seconds
+
+INSERT INTO ...
+
+UPDATE ... SET ... WHERE id=@id
+
+DELETE Twitch.STREAM_TAG WHERE Stream_id = @Stream_id
+
+DELETE Twitch.CLIP WHERE Clip_id = @Clip_id
+
+SELECT * FROM Twitch.STREAM_TAG WHERE Stream_id=@Stream_id
+
+"SELECT * FROM Twitch.CLIP WHERE Stream_id=@Stream_id
+
+DELETE Twitch.FOLLOWS WHERE Follower_channel_id=@Follower_channel_id AND Followed_channel_id=@Followed_channel_id
+
+DELETE Twitch.SUBSCRIPTION WHERE From_channel_id=@From_channel_id AND To_channel_id=@To_channel_id
